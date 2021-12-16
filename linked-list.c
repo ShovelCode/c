@@ -17,5 +17,20 @@ void printList();
 void instructions();
 
 int main( void ) {
+  puts( "First call to each function: ");
+  staticArrayInit();
+  automaticArrayInit();
   
+  puts("\n\nSecond call to each function: ");
+  staticArrayInit();
+  automaticArrayInit();
+}
+
+//static local array
+void staticArrayInit(void)
+{
+  static int array1[3];
+  size_t i;
+  
+  puts("\nValues on entering staticArrayInit: ");
 }
